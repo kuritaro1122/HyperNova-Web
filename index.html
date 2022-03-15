@@ -1,97 +1,250 @@
+<!doctype html>
 <html>
-  <head><!-- 裏設定エリアの開始 -->
-    <meta charset="utf-8"><!-- 文字化け防止 -->
-    <title>Kuritaro Lab</title>
-    <style>
-      header{
-            background-color: white;
-            color: black;
-            width: 100%;
-            height: auto;
-            font-size: 200%;
-      }
-      body {
-        color : rgb(255, 255, 255);
-        background-color: #363636;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-      }
-      a {
-        color:aquamarine;
-        text-decoration:solid;
-      }
-      .zeroBlock {
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-      }
-      .detail {
-        text-align: center;
-        margin: 0 auto;
-        margin-block-start: 0px;
-        margin-block-end: 0px;
-      }
-      .textBox {
-        display: inline-block;
-        text-align: left;
-      }
-    </style>
-  </head><!-- 裏設定エリアの終了 -->
-  <body><!-- 画面に表示されるエリアの開始 -->
-    <header><center><h1>HyperNova</h1></center></header> 
-    <!--<br/>-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width = device-width, initial-scale=1, user-scalable=yes">
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@S_KuriKun" />
+  <meta property="og:url" content="https://kuritaro1122.github.io/HyperNova-Web/" />
+  <meta property="og:title" content="HyperNova" />
+  <meta property="og:description" content="全てがボクセルでできた世界で敵を倒して進んでいく、2D横スクロールシューティング。敵を倒し、強化アイテムを集め、次々と現れる強大な敵に挑め!!" />
+  <meta property="og:image" content="./img/s-HyperShipLogo.png" />
+  <title>HyperNova</title>
+  <link href="css/reset.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./img/s-HyperShipLogo.png">
+</head>
+
+<body>
+
+  <!--ヘッダー-->
+  <header>
+    <!--メニュー-->
+    <div class="menubtn">
+      <span></span>
+      <span>MENU</span>
+      <span></span>
+    </div>
+    <nav class="globalnav">
+      <!--  -->
+      <ul>
+        <li id="titleLogo"><img src="./img/HyperNovaLogo.png"></li>
+        <li><a href="#story">STORY</a></li>
+        <!--<li><a href="#chara">CARACTER</a></li>-->
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#system">SYSTEM</a></li>
+        <li><a href="#download">DOWNLOAD</a></li>
+        <li><a href="#link">LINK</a></li>
+      </ul>
+    </nav>
+    <!--ヒーローイメージ-->
+    <div class="topimg">
+      <img src="./img/HyperNovaTopImg.jpeg" alt="">
+
+    </div>
+  </header>
+  <!--ヘッダーここまで-->
+
+  <!--コンテンツ-->
+  <main>
+    <!--STORY-->
+    <section id="story">
+      <h2>STORY</h2>
+      <p>
+        全てがボクセルでできた世界で敵を倒して進んでいく、2D横スクロールシューティング。敵を倒し、強化アイテムを集め、次々と現れる強大な敵に挑め!!
+      </p>
+    </section>
+
+    <!--CHARACTER-->
     <!--
-    <div id="hyperNova" align="center">
-      <h1><b>HyperNova [Unity]</b></h1>
-      <img src="img_hyperNova/thumbnail.png" width="560" height="315">
-      <iframe width="280" height="157.5" src="https://www.youtube.com/embed/A8jWkfE1WYU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="detail"><h6 class="zeroBlock">
-        <p class = "textBox">
-          全てがボクセルでできた世界で敵を倒して進んでいく、2D横スクロールシューティング。 <br>
-          敵を倒し、強化アイテムを集め、次々と現れる強大な敵に挑め！！<br>
-          <br>ディレクター: KuriTaro <br>
-          プログラム: KuriTaro, Komihorium <br>
-          デザイン: KuriTaro, TyPhoon, Tabasco III, Suupia<br>
-          ミュージック: TyPhoon, Suupia
-          </br>対応デバイス：Windows, MacOS</h6>
-          <a href="https://kuri-taro.booth.pm/items/3236853"><img src="https://asset.booth.pm/static-images/banner/200x40_01.png"></a>
-        </p>
+    <section id="chara">
+      <h2>CHARACTER</h2>
+      <div class="grid each">
+        <img src="http://placehold.jp/468x351.png?text=chara1" alt="">
+        <div>
+          <h4>キャラクター名</h4>
+          <p>キャラクターの説明文。いったい先刻で干渉観は何しろその使用ですですまでを定めるているたがは尊重思っですですて、たったにはあっませだでしだ。</p>
+        </div>
       </div>
-
-      <h1><b>Reflect [Unity]</b></h1>
-      <img src="img_unity/img1.png" width="560" height="315">
-      <img src="img_unity/reflect.gif" width="120" height="120">
-      <h3 class="detail"><a href="https://kuritaro1122.github.io/Reflect-WebGL"> [WebGL] Play</a></h3> 
-
-      <h1><b>CATSTG ~魔女を倒せ~ [Scratch]</b></h1>
-      <img src="img_scratch/catstg1.png" width="560" height="416.28">
-      <h3 class="detail"><a href="https://scratch.mit.edu/projects/237455253/"> [Scratch] Play</a></h3> 
-
-      <h1><b>Porsche 718 Cayman GT4 [Blender]</b></h1>
-      <div class="album">
-        <img class="img" src="img_blender/GT4_1_202109021924.png" width="560" height="315">
-        <br><img class="img" src="img_blender/GT4_2_202109021937.png" width="280" height="157.5">
-        <img class="img" src="img_blender/GT4_3_202109022221.png" width="280" height="157.5">
+      <div class="grid each">
+        <img src="http://placehold.jp/468x351.png?text=chara2" alt="">
+        <div>
+          <h4>キャラクター名</h4>
+          <p>キャラクターの説明文。いったい先刻で干渉観は何しろその使用ですですまでを定めるているたがは尊重思っですですて、たったにはあっませだでしだ。</p>
+        </div>
       </div>
-      <h1><b>Jimny [Blender]</b></h1>
-      <img class="img" src="img_blender/Jimny.30.png" width="560" height="315">
-      <h1><b>Honda S2000 & Delorean [Blender]</b></h1>
-      <img class="img" src="img_blender/OKHI0221.PNG" width="560" height="315">
+      <div class="grid each">
+        <img src="http://placehold.jp/468x351.png?text=chara3" alt="">
+        <div>
+          <h4>キャラクター名</h4>
+          <p>キャラクターの説明文。いったい先刻で干渉観は何しろその使用ですですまでを定めるているたがは尊重思っですですて、たったにはあっませだでしだ。</p>
+        </div>
+      </div>
+    </section>
+    -->
+    <!--GALLERY-->
+    <section id="gallery">
+      <section class="gallery">
+        <h2>GALLERY</h2>
+        <div class="grid">
+          <div>
+            <img src="./img/HyperNovaW1.png" alt="">
+            <p></p>
+          </div>
+          <div>
+            <img src="./img/HyperNovaW2.png" alt="">
+            <p></p>
+          </div>
+          <div>
+            <img src="./img/HyperNovaW3B.png" alt="">
+            <p></p>
+          </div>
+          <div>
+            <img src="./img/HyperNovaW4B.png" alt="">
+            <p></p>
+          </div>
+        </div>
+      </section>
+    </section>
 
-      <h1><b>ゴム鉄砲 3号機</b></h1>
-      <img class="img" src="img_blender/Gunb.png" width="280" height="157.5">
-      <img class="img" src="img_blender/IMG_8631.JPG" width="210" height="157.5">
 
-      <h1><b>~Profile~<b/></h1>
-      <img class="img" src="img_icon/kuritaro.png" width="144.75" height="115.5">
-      <div class="detail"><h4 class="zeroBlock">
-        <p class="textBox">
-        ニックネーム：くり太郎
-        </br>使用言語：Java, C言語, C#, C++, Python
-        <br/>Twitter<a href="https://twitter.com/S_KuriKun"> @S_KuriKun </a>
-        <br/>Instagram<a href="https://www.instagram.com/s_kurikun"> s_kurikun</a>
-        <br/>GitHub<a href="https://github.com/kuritaro1122"> kuritaro1122</a>
-        <br/>Booth<a href="https://kuri-taro.booth.pm"> Kuritaro Lab</a>
-        </p>
-      <h4/>
-    </div>-->
-  </body><!-- 画面に表示されるエリアの終了 -->
+    <!--SYSTEM-->
+    <section id="system">
+      <h2>SYSTEM</h2>
+      <section class="outline">
+        <h3>REQUIREMENTS</h3>
+        <dl class="grid">
+          <dt>OS</dt>
+          <dd>Windows 10 64Bit, macOS X</dd>
+          <dt>CPU</dt>
+          <dd>2.4GHz CPU Quad Core 同等以上</dd>
+          <dt>メモリ</dt>
+          <dd>8GB</dd>
+          <dt>GPU</dt>
+          <dd>Geforce GTX 750 同等以上</dd>
+          <dt>ストレージ</dt>
+          <dd>1GB</dd>
+        </dl>
+      </section>
+      <!--OUTLINE-->
+      <section class="outline">
+        <h3>OUTLINE</h3>
+        <dl class="grid">
+          <dt>ジャンル</dt>
+          <dd>シューティング</dd>
+          <dt>対象年齢</dt>
+          <dd>全年齢</dd>
+          <dt>プレイ時間</dt>
+          <dd>30分</dd>
+          <dt>配布形式</dt>
+          <dd>無料</dd>
+        </dl>
+      </section>
+    </section>
+
+    <!--ダウンロード-->
+    <section id="download">
+      <h2>DOWNLOAD</h2>
+      <p>ダウンロードはこちらから</p>
+      <a href="https://kuri-taro.booth.pm/items/3236853" class="button">ダウンロード</a>
+    </section>
+
+    <!--LINK-->
+    <section id="link">
+      <h2>LINK</h2>
+      <!--About Link-->
+      <section class="aboutlink">
+        <h3>ABOUT LINK</h3>
+        <div class="wrapper">
+          <div class="banner">
+            <img src="./img/kuritaro.png" alt="">
+          </div>
+          <div>
+            <dl class="grid">
+              <dt>Site Name</dt>
+              <dd>KuriTaro Lab</dd>
+              <dt>Master</dt>
+              <dd>くり太郎</dd>
+              <dt>URL</dt>
+              <dd>https://kuritaro1122.github.io/</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+      <!--MATERIAL-->
+      <!--
+      <h3>MATERIAL</h3>
+      <ul>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+        <li><a href=""><img src="http://placehold.jp/200x40.png?text=バナー" alt=""></a></li>
+      </ul>-->
+    </section>
+  </main>
+  <!--コンテンツここまで-->
+
+  <!--フッター-->
+  <footer>
+    <!--メニュー-->
+    <nav>
+      <ul>
+        <li><a href="#story">STORY</a></li>
+        <!--<li><a href="#chara">CARACTER</a></li>-->
+        <li><a href="#gallery">GALLERY</a></li>
+        <li><a href="#system">SYSTEM</a></li>
+        <li><a href="#download">DOWNLOAD</a></li>
+        <li><a href="#link">LINK</a></li>
+      </ul>
+      </ul>
+    </nav>
+    <!--クレジット-->
+    <small>&copy; 2021-2022 KuriTaro Lab.</small>
+    <!--トップへ -->
+    <a href="#">
+      <div class="totop"><i class="fas fa-arrow-up"></i></div>
+    </a>
+  </footer>
+
+  <!--jQuery 読込-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+
+  <!-- スマホメニュー用 -->
+  <script type="text/javascript">
+    $(function () {
+      $('.menubtn').click(function () {
+        $(this).toggleClass('active');
+        $(".globalnav").fadeToggle();
+      });
+    });
+  </script><!-- スマホメニュー用ここまで -->
+
+  <!-- スムーススクロール -->
+  <script type="text/javascript">
+    $(function () {
+      var width = $(window).width();
+      $('a[href*="#"]').click(function () {
+        var speed = 400;
+        var href = $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $('body,html').animate({
+          scrollTop: position
+        }, speed, 'swing');
+        return false;
+      });
+    });
+  </script><!-- スムーススクロールここまで -->
+
+</body>
+
 </html>
